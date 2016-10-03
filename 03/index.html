@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        // your code here...
+        "use strict";
+        function truncate (valueStr, n){
+
+            if (n % 1 === 0) {
+                if (valueStr.length <= n) {
+                    return valueStr;
+                }
+                else if (n < 1) {
+                    return "Enter n > 0";
+                }
+                else {
+                    var rezult = '';
+                    for (var i = 0; i < n; i++){
+                        rezult += valueStr[i];
+                    }
+                    rezult += '...';
+                    return rezult;
+                }
+            }
+            else {
+                return "Enter Integer";
+            }
+        }
+
+        alert(truncate('aopeqrt',6));
+
+    </script>
+</body>
+</html>
