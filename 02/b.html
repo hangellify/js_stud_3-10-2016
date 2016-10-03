@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2 b)</title>
+</head>
+<body>
+    <script>
+        // your code here...
+        "use strict";
+
+        function reverseInt (value){
+            value += '';
+            var rezult = '';
+
+            for (var i = value.length - 1; i > -1; i--){
+                rezult += value[i];
+
+            }
+
+            return parseFloat(rezult);
+        }
+
+        alert(reverseInt(321));
+        alert(reverseInt(1.43));
+    </script>
+</body>
+</html>
