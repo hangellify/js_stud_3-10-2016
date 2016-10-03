@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        // your code here...
+        "use strict";
+        function count (value) {
+            value = value.toLowerCase();
+            var ver = '';
+            var labelWord = 0;
+
+            for (var i = 0; i < value.length; i++){
+                ver = value[i];
+
+                if (i == 0 && ver != ' '){
+                    labelWord++;
+                    continue;
+                }
+
+                if (ver == ' '){
+                    ver = value[i + 1];
+                    if (ver != ' ') {
+                        labelWord++;
+                        i++;
+                    }
+                }
+            }
+
+            return labelWord;
+        }
+
+        alert(count('you  shall    not      pass  plz'));
+    </script>
+</body>
+</html>
