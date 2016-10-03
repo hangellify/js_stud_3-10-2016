@@ -9,13 +9,14 @@
         // your code here...
         "use strict";
         function truncate (valueStr, n){
+            var rezult = '';
 
             if (n % 1 === 0) {
                 if (valueStr.length <= n) {
-                    return valueStr;
+                    rezult = valueStr;
                 }
                 else if (n < 1) {
-                    return "Enter n > 0";
+                    rezult = "Enter n > 0";
                 }
                 else {
                     var rezult = '';
@@ -23,12 +24,12 @@
                         rezult += valueStr[i];
                     }
                     rezult += '...';
-                    return rezult;
                 }
             }
-            else {
-                return "Enter Integer";
-            }
+
+            //return rezult;
+            return n % 1 === 0 ?  rezult :  'Enter Integer';
+
         }
 
         alert(truncate('aopeqrt',6));
