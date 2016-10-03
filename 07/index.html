@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        // your code here...
+        "use strict";
+        function sum (value) {
+            var sumRezult = 0;
+            var multRezult = 1;
+            value += '';
+
+            for (var i = 0; i < value.length; i++){
+                sumRezult += parseInt(value[i]);
+            }
+
+            for (var i = 0; i < value.length; i++){
+                multRezult *= parseInt(value[i]);
+            }
+
+            sumRezult += '';
+            multRezult += '';
+            return (sumRezult + ',' + multRezult);
+        }
+
+        alert(sum(2222));
+    </script>
+</body>
+</html>
