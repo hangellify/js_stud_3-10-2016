@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        // your code here...
+        "use strict";
+        function separating(value) {
+
+            var ver;
+            var rezult = '';
+            for (var i = 0; i < value.length; i++){
+                ver = value[i];
+                if (ver == ver.toUpperCase()){
+                   rezult += " " + ver.toLowerCase();
+                }
+                else{
+                    rezult += value[i];
+                }
+
+            }
+            return rezult;
+
+        }
+
+        alert(separating('getElementBy'));
+
+    </script>
+</body>
+</html>
