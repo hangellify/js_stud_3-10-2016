@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        // your code here...
+        "use strict";
+
+        function poW(value,power) {
+            var rezult = value;
+
+            if (power === 0){
+                return 1;
+            }
+
+            else if (power < 0){
+                for (var i = -1; i > power; i-- ) {
+                    rezult *= rezult;
+                }
+                return (1 / rezult);
+            }
+
+            else{
+                for (var i = 1; i < power; i++ ) {
+                    rezult *= rezult;
+                }
+                return rezult;
+            }
+        }
+
+        alert(poW(10,-2));
+    </script>
+</body>
+</html>
